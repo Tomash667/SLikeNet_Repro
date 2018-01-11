@@ -12,7 +12,7 @@ RakPeerInterface* peer;
 
 void RunClient()
 {
-	//if(!peer)
+	if(!peer)
 		peer = RakPeerInterface::GetInstance();
 
 	SocketDescriptor sd;
@@ -61,7 +61,7 @@ void RunClient()
 		Sleep(100);
 	}
 
-	RakPeerInterface::DestroyInstance(peer);
+	//RakPeerInterface::DestroyInstance(peer);
 }
 
 int main()
